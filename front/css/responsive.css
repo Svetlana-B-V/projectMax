@@ -1,0 +1,199 @@
+/* ============ ПЛАНШЕТЫ ============ */
+@media (max-width: 1024px) {
+    .header-tabs {
+        gap: 2px;
+    }
+
+    .header-tab {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .donut-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ============ МОБИЛЬНЫЕ ============ */
+@media (max-width: 768px) {
+    .header {
+        height: 60px;
+    }
+
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .header-tabs {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        background: white;
+        padding: 8px;
+        border-radius: 0;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+        justify-content: space-around;
+        z-index: 999;
+    }
+
+    .header-tab {
+        flex-direction: column;
+        gap: 4px;
+        padding: 6px 12px;
+        font-size: 10px;
+        flex: 1;
+    }
+
+    .header-tab span {
+        font-size: 10px;
+    }
+
+    .header-right {
+        gap: 8px;
+    }
+
+    .main-content {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 16px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .savings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .debts-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filter-select {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .profile-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============ МАЛЕНЬКИЕ ТЕЛЕФОНЫ ============ */
+@media (max-width: 480px) {
+    .header-tab svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .stat-value {
+        font-size: 20px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #donutChart {
+        width: 160px !important;
+        height: 160px !important;
+    }
+
+    .debt-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .debt-actions {
+        text-align: left;
+        width: 100%;
+    }
+
+    .comparison-values {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .savings-card {
+        padding: 16px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .auth-card {
+        padding: 20px;
+    }
+
+    .auth-logo svg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .auth-logo h1 {
+        font-size: 24px;
+    }
+
+    .auth-tab {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+/* ============ БОЛЬШИЕ ЭКРАНЫ ============ */
+@media (min-width: 1440px) {
+    .main-content {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .savings-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
